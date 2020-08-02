@@ -1,5 +1,6 @@
 html {
   font-family: Arial;
+  font-size: 14px;
 }
 
 /*  NAV */
@@ -28,10 +29,43 @@ html {
   padding: 20px 0px;
 }
 
+#bottom-middle-nav {
+  display: flex;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.nav-img {
+  padding-right: 7px;
+}
+
+#bottom-middle-left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  padding-left: 15px;
+}
+
+#bottom-middle-right-nav {
+  padding-left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+#nav {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.all {
+  color: rgb(26, 115, 232);
+}
+
 /* INPUT */
 input {
   border: none;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   height: 20px;
   width: 500px;

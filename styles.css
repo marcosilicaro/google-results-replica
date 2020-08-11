@@ -3,6 +3,20 @@ html {
   font-size: 14px;
 }
 
+/*  BACKGROUND COLORS */
+
+.gris-liviano {
+  background-color: #e8e8e8;
+}
+
+.gris-fuerte {
+  background-color: #a0a0a0;
+}
+
+.azul {
+  background-color: cornflowerblue;
+}
+
 /*  NAV */
 
 #top-nav {
@@ -20,13 +34,13 @@ html {
 }
 
 #right-nav {
-  position: fixed;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 25px;
   align-items: center;
-  width: 90px;
-  justify-content: space-between;
-  right: 50px;
-  padding: 20px 0px;
+  position: absolute;
+  right: 20;
+  top: 20;
 }
 
 #bottom-middle-nav {
@@ -196,4 +210,111 @@ h2 {
 .video-img iframe {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+/* RELATED SEARCHES */
+
+.list-of-keywords {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.list-link {
+  color: blue;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 22px;
+}
+
+.list-link:hover {
+  text-decoration: underline;
+}
+
+/* pagination */
+
+.top-logo img {
+  width: 23%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.bottom-nav {
+  word-spacing: 5px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+.link-izq {
+  padding-left: 250px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 15px;
+  padding-top: 3%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.footer-top {
+  height: 40px;
+  padding-left: 13%;
+  display: grid;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  border-bottom: 1px solid #a0a0a0;
+  border-top: 1px solid #a0a0a0;
+}
+
+.footer-top a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.footer-top a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  display: grid;
+  height: 40px;
+  padding-left: 13%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: start;
+  grid-column-gap: 23px;
+}
+
+.footer-bottom a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: black;
 }
